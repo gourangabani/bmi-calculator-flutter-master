@@ -13,18 +13,29 @@ class BMICalculator extends StatelessWidget {
 
 class InputPage extends StatefulWidget {
   @override
-  _InputPageState createState() => _InputPageState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _InputPageState extends State<InputPage> {
+class _HomePageState extends State<InputPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('BMI CALCULATOR'),
       ),
-      body: Center(
-        child: Text('Body Text'),
+      body: Container(
+        color: Colors.red,
+        child: Column(
+          children: [
+            Container(
+              height: 100,
+              color: Colors.green,
+              child: Row(
+                children: [],
+              ),
+            )
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
